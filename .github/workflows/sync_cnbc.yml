@@ -19,7 +19,7 @@ jobs:
           done
       - name: Push to CNBC
         run: |
-          remote_repo="https://${CNBC_USERNAME}:${CNBC_PASSWORD}@cnb.cool/tca/tools/${GITHUB_REPOSITORY##*/}.git"
+          remote_repo="https://${CNBC_USERNAME}:${CNBC_PASSWORD}@cnb.cool/tencent/cloud/tca/tools/${GITHUB_REPOSITORY##*/}.git"
           git remote add cnbc "${remote_repo}"
           git show-ref # debug
           git branch --verbose
